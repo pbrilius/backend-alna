@@ -3,6 +3,7 @@
 use App\Http\Controllers\JobPost;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Tests\Feature\ArticleControllerTest;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('/crawl', JobPost::class);
+Route::get('/articles', [ArticleControllerTest::class, 'articles']);
