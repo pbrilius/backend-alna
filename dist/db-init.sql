@@ -1,3 +1,3 @@
-CREATE DATABASE IF NOT EXISTS docker_solution_alna;
+CREATE DATABASE IF NOT EXISTS backend_alna_target;
 CREATE user IF NOT EXISTS docker_alna@localhost IDENTIFIED BY 'TxuJAz';
-GRANT ALL ON docker_solution_alna.* TO docker_alna@localhost;
+GRANT ALL ON backend_alna_target.* TO docker_alna@localhost;
