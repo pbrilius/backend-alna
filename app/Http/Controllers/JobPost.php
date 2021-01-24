@@ -32,6 +32,6 @@ class JobPost extends Controller
 
         CrawlArticles::dispatch($article);
         
-        return response('Data inserted: ' . json_encode($site), 200);
+        return response(json_encode($site));
     }
 }
